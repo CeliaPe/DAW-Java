@@ -46,11 +46,23 @@ public class Main {
     System.out.println(nombre);
     */
 
+    /*
     System.out.println(numero1+numero2);
     numeroString = numeroString+numero1;
     System.out.println(numeroString);
     System.out.println(numeroString+numero1+numero2);
     System.out.println(numero1+numero2+numeroString);
+    */
 
+    if (numero1 < numero2){
+      System.out.println("Numero1 es menor.");
+    } else if (numero2 < numero1) {
+      System.out.println("Numero2 es menor.");
+    } else {
+      System.out.println("Son iguales.");
+    }
+
+    numeroString = (numero1 < numero2) ? "Numero1 es menor." : "Numero2 es menor";
+    System.out.println(numeroString);
   }
 }
