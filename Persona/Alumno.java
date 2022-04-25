@@ -17,4 +17,10 @@ public class Alumno extends Persona{
     this.grado = alumno.grado;
   }
 
+  // Gets y Sets
+
+  public String toString(){
+    return super.toString() + " Estoy en el grado de " + this.grado + ".";
+  }
+
 }
