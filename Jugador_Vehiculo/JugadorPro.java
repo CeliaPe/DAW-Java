@@ -13,11 +13,11 @@
 */
 
 public class JugadorPro extends Jugador{
-  //protected Vehiculo coche;
+  protected Vehiculo coche;
 
   public JugadorPro(String nombre){
     super(nombre);
-    //this.coche = new Vehiculo();
+    this.coche = new Vehiculo();
   }
 
   //Constructor parámetros.
@@ -26,6 +26,6 @@ public class JugadorPro extends Jugador{
   //Set
 
   public String toString(){
-    return super.toString();
+    return super.toString() + " " + coche.toString();
   }
 }

@@ -39,6 +39,6 @@ public class Jugador{
   }
 
   public String toString(){
-    return "A " + this.nombre + " le quedan " + this.vidas + " vidas y esta en las coordenadas " + this.imprCoor();
+    return "A " + this.nombre + " le quedan " + this.vidas + " vidas y esta en las coordenadas " + this.imprCoor() + ".";
   }
 }
