@@ -19,12 +19,12 @@ public class Jugador{
   protected int vidas;
   protected int[] coordenadas;
 
-  private final int VIDAS = 3;
+  private final int MAXVIDAS = 3;
   private final int[] COOR = {0,0};
 
   public Jugador(String nombre){
     this.nombre = nombre;
-    this.vidas = VIDAS;
+    this.vidas = MAXVIDAS;
     this.coordenadas = COOR;
   }
 
