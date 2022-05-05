@@ -28,6 +28,11 @@ public class Jugador{
     this.coordenadas = COOR;
   }
 
+  public void andar (int x, int y){
+    this.coordenadas[0] += x;
+    this.coordenadas[1] += y;
+  }
+
   //Constructor parámetros.
   //Constructor copia.
 
