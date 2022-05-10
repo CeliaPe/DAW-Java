@@ -4,11 +4,12 @@ public class Alumno extends Persona{
   protected String gradoProt;           // Acceso desde los hijos y el paquete.
   public    String gradoPubl;           // Acceso global.
 
-  enum Nota{
-    SOBRESALIENTE, NOTABLE, BIEN, SUFICIENTE, INSUFICIENTE;
+  enum Nota{ // Escribir hacia abajo si hay que hacer scroll.
+    SOBRESALIENTE, NOTABLE, BIEN, SUFICIENTE, INSUFICIENTE; // El ; no es necesario
   }
 
   Nota nota;
+  private String resultadoNotas; // Para el stringNotas.
 
   public Alumno(){
     super();
@@ -27,10 +28,38 @@ public class Alumno extends Persona{
     this.nota = alumno.nota;
   }
 
+  private String stringNotas(){
+    switch(this.nota){
+      case SOBRESALIENTE:
+        resultadoNotas = "Oleeeeeee! Asi se hase! :)";
+        break;
+      case NOTABLE:
+        resultadoNotas = "Lo has hecho muy bien!!";
+        break;
+      case BIEN:
+        resultadoNotas = "Bien!!";
+        break;
+      case SUFICIENTE:
+        resultadoNotas = "Ta'bien... Pero por lo' peloh";
+        break;
+      case INSUFICIENTE:
+        resultadoNotas = "Asi NO se hase! :(";
+        break;
+    }
+    return resultadoNotas;
+  }
+
   // Gets y Sets
 
+  public Nota getNota(){
+    return this.nota;
+  }
+  public void setNota(Nota nota){
+    this.nota = nota;
+  }
+
   public String toString(){
-    return super.toString() + " Estoy en el grado de " + this.grado + ". Tengo de nota un " + this.nota + ".";
+    return super.toString() + " Estoy en el grado de " + this.grado + ". " + this.stringNotas() + ".";
   }
 
 }
