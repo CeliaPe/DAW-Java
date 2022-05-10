@@ -1,6 +1,6 @@
 enum Color{
   AZUL(10), AMARILLO(15), VERDE(20), ROJO(25);
-
+  //public static final Nota AZUL = new Nota(10);
   private int numLapices;
   Color (int num){
     this.numLapices = num;
