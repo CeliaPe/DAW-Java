@@ -4,9 +4,18 @@ public class Alumno extends Persona{
   protected String gradoProt;           // Acceso desde los hijos y el paquete.
   public    String gradoPubl;           // Acceso global.
 
-  enum Nota{ // Escribir hacia abajo si hay que hacer scroll.
+  public enum Nota{ // Escribir hacia abajo si hay que hacer scroll.
     SOBRESALIENTE, NOTABLE, BIEN, SUFICIENTE, INSUFICIENTE; // El ; no es necesario
   }
+
+  /*// Enum Nota como clase:
+  class Nota{
+    public static final Nota SOBRESALIENTE = new Nota();
+    public static final Nota NOTABLE = new Nota();
+    .
+    .
+    .
+  }*/
 
   Nota nota;
   private String resultadoNotas; // Para el stringNotas.
