@@ -1,6 +1,6 @@
 public class Main{
   public static void main (String[] args){
-    Persona miPersona = new Persona("P", "98798787k");
+    Alumno miPersona = new Alumno("P", "98798787k", "DAW");
     System.out.println(miPersona);
     System.out.println("El nombre es " + miPersona.getNombre() + ".");
     System.out.println("El dni es " + miPersona.getDNI() + ".");
