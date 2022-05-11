@@ -38,16 +38,26 @@ public class Main{
       System.out.println("Del color " + c + " tenemos " +c.getNumLapices() + " lapices.");
     }
 
-    System.out.println("Imprimiendo el numero de lapices azules [10]: ");
+    System.out.println();
+    System.out.print("Imprimiendo el numero de lapices azules [10]: ");
     System.out.println(Color.AZUL.getNumLapices());
-    System.out.println("Imprimiendo el numero de lapices en miColor (es ROJO) [25]: ");
+    System.out.print("Imprimiendo el numero de lapices en miColor (es ROJO) [25]: ");
     System.out.println(miColor.getNumLapices());
-    System.out.println("Imprimiendo el numero de lapices en miSegundoColor (es ROJO) [25]: ");
+    System.out.print("Imprimiendo el numero de lapices en miSegundoColor (es ROJO) [25]: ");
     System.out.println(miSegundoColor.getNumLapices());
-    System.out.println("Cambiamos el valor del numero de lapices de miColor a 5:");
+    System.out.print("Cambiamos el valor del numero de lapices de miColor a 5: ");
     miColor.setNumLapices(5);
     System.out.println(miColor.getNumLapices());
-    System.out.println("MiSegundoColor es ROJO igual que miColor. Imprimiendo el numero de lapices en miSegudnoColor");
+    System.out.print("MiSegundoColor es ROJO igual que miColor. Imprimiendo el numero de lapices en miSegundoColor: ");
     System.out.println(miSegundoColor.getNumLapices());
+
+    System.out.println();
+    System.out.println("Al comparar dos objetos de tipo Enum estamos comparando" +
+    "la cardinalidad de su elemento. Ahora miColor es AZUL y miSegundoColor es ROJO.");
+    miColor = Color.valueOf("AZUL");
+    System.out.print("Comparo Azul con Rojo: ");
+    System.out.println(miColor.compareTo(miSegundoColor));
+    System.out.print("Comparo Azul con Azul: ");
+    System.out.println(miColor.compareTo(miColor));
   }
 }
