@@ -29,7 +29,7 @@ public class Main{
       System.out.println(c);
     }
     System.out.println("Ordinal de ROJO:");
-    Color miColor = Color.valueOf("ROJO");
+    Color miColor = Color.ROJO;
     Color miSegundoColor = Color.valueOf("ROJO");
     System.out.println(miColor.ordinal());
 
