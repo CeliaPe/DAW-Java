@@ -15,7 +15,8 @@ public class Main {
       habitacion = Albergue.valueOf(tipoHabitacion);
       System.out.print("Indica el numero de personas: ");
       numPersonas = sc.nextInt();
-      // sc.nextLine(); // Limpiamos el buffer.
+      sc.nextLine(); // Limpiamos el buffer.
+      System.out.println(" -- Comprobar que el numero de personas es valido -- ");
       numPersonasValido = habitacion.numPersonasValido(numPersonas);
     }
     System.out.print("Indica el numero de noches: ");

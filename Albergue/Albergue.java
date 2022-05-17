@@ -36,7 +36,6 @@ public enum Albergue{
   }
 
   public boolean numPersonasValido(int numPersonas){
-    System.out.println("Entramos en numPersonasValido()");
-    return true;
+    return numPersonas <= this.personas;
   }
 }
