@@ -13,4 +13,25 @@ public enum Albergue{
     this.precio = precio;
     this.disponibles = disponibles;
   }
+
+  public int getPersonas(){
+    return this.personas;
+  }
+  public double getPrecio(){
+    return this.precio;
+  }
+  public int getDisponibles(){
+    return this.disponibles;
+  }
+
+  // setPersona y setPrecio no son necesarios para nuestro código.
+  /*public void setPersonas(int personas){
+    this.personas = personas;
+  }
+  public void setPrecio(double precio){
+    this.precio = precio;
+  }*/
+  public void setDisponibles(int disponibles){
+    this.disponibles = disponibles;
+  }
 }
