@@ -38,4 +38,14 @@ public enum Albergue{
   public boolean numPersonasValido(int numPersonas){
     return numPersonas <= this.personas;
   }
+  public double precioTotal(int numNoches){
+    return numNoches*this.precio;
+  }
+  public double precioPorPersona(int numPersonas, double precioTotal){
+    return precioTotal/numPersonas;
+  }
+  public double precioPorPersona(int numPersonas, int numNoches){
+    double precioTotal = this.precioTotal(numNoches);
+    return precioTotal/numPersonas;
+  }
 }
