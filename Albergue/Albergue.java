@@ -34,4 +34,9 @@ public enum Albergue{
   public void setDisponibles(int disponibles){
     this.disponibles = disponibles;
   }
+
+  public boolean numPersonasValido(int numPersonas){
+    System.out.println("Entramos en numPersonasValido()");
+    return true;
+  }
 }
