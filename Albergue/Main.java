@@ -28,9 +28,16 @@ public class Main {
     boolean numPersonasValido = false;
 
     while(!numPersonasValido){
-      System.out.print("Indica el tipo de habitacion que desea: ");
-      tipoHabitacion = sc.nextLine();
-      habitacion = Albergue.valueOf(tipoHabitacion);
+      try{
+        System.out.print("Indica el tipo de habitacion que desea: ");
+        tipoHabitacion = sc.nextLine();
+        habitacion = Albergue.valueOf(tipoHabitacion);
+      } catch ( Exception e){
+        System.out.print("Los tipos de habitaciones son SIMPLE, DOBLE, TRIPLE o MULTIPLE, indique cual desea: ");
+        tipoHabitacion = sc.nextLine();
+        habitacion = Albergue.valueOf(tipoHabitacion);
+      }
+
       System.out.print("Indica el numero de personas: ");
       numPersonas = sc.nextInt();
       sc.nextLine(); // Limpiamos el buffer.
