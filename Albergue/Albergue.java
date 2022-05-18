@@ -1,7 +1,7 @@
 public enum Albergue{
-  SIMPLE(1,50,4),
+  SIMPLE(1,50,2),
   DOBLE(2,80,4),
-  TRIPLE(3,100,4),
+  TRIPLE(3,100,0),
   MULTIPLE(6,150,4);
 
   private int personas;
